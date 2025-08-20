@@ -1,69 +1,67 @@
-# React + TypeScript + Vite
+# Vite + React + TypeScript + TailwindCSS + Storybook Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **React + TypeScript** project built using **Vite**, with optional support for **TailwindCSS** and **Storybook**. It provides a modern development environment for building scalable and maintainable web applications.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   ⚡ Fast bundling with [Vite](https://vitejs.dev/)
+-   ⚛️ React 18 with TypeScript
+-   📂 Organized project structure
+-   🎨 TailwindCSS support (optional)
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Clone the repository and install dependencies:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+``` bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🏃 Running the Project
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Start the development server:
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+``` bash
+npm run dev
 ```
+
+Build for production:
+
+``` bash
+npm run build
+```
+
+Preview the production build:
+
+``` bash
+npm run preview
+```
+
+## 📂 Project Structure
+
+    my-app/
+    ├── public/            # Static assets
+    ├── src/               # Application source code
+    │   ├── components/    # Reusable components
+    │   │   ├── DataTable/ # DataTable component
+    │   │   ├── InputField/ # InputField component
+    │   ├── App.tsx        # Root component
+    │   ├── main.tsx       # Entry point
+    │   └── index.ts       # Exports for cleaner imports
+    ├── index.html         # HTML entry
+    ├── package.json       # Dependencies and scripts
+    ├── tsconfig.json      # TypeScript config
+    └── vite.config.ts     # Vite config
+
+## 🛠️ Scripts
+
+-   `npm run dev` - Start development server
+-   `npm run build` - Build production bundle
+-   `npm run preview` - Preview production build
+-   `npm run storybook` - Start Storybook
+
+## 📜 License
+
+This project is licensed under the MIT License.
