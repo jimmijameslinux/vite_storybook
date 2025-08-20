@@ -1,16 +1,24 @@
 import './App.css'
+import { DataTable } from './components/DataTable/DataTable'
+import { InputField } from './components/InputField/InputField'
 
 function App() {
 
   return (
     <>
-      <div className="App">
-        <h1 className="text-3xl font-bold underline">
-          Hello world!
-        </h1>
-      </div>
-      <p className="text-red-500">This is a paragraph styled with Tailwind CSS.</p>
-     
+    <div className='p-4 flex flex-col gap-y-4'>
+      <InputField label="Search" placeholder="Type to search..." />
+
+      <DataTable data={[
+        { id: 1, name: "Alice", age: 25, email: "alice@example.com" },
+        { id: 2, name: "Bob", age: 30, email: "bob@example.com" },
+        { id: 3, name: "Charlie", age: 28, email: "charlie@example.com" },
+      ]} columns={[
+        { key: "name", title: "Name", dataIndex: "name", sortable: true },
+        { key: "age", title: "Age", dataIndex: "age", sortable: true },
+        { key: "email", title: "Email", dataIndex: "email" },
+      ]} />
+</div>
     </>
   )
 }
