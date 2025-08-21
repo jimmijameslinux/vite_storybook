@@ -62,6 +62,41 @@ npm run preview
 -   `npm run preview` - Preview production build
 -   `npm run storybook` - Start Storybook
 
-## 📜 License
+## 📸 Screenshots of Storybook Components
 
-This project is licensed under the MIT License.
+DataTable Component
+
+### Documentation
+![DataTable Docs](./src/assets/Screenshot%202025-08-21%20065214.png)
+
+### Default
+![DataTable Default](./src/assets/Screenshot%202025-08-21%20072923.png)
+
+### Loading
+![DataTable Loading](./src/assets/Screenshot%202025-08-21%20072929.png)
+
+### Empty
+![DataTable Empty](./src/assets/Screenshot%202025-08-21%20072934.png)
+
+### Selectable
+![DataTable Selectable](./src/assets/Screenshot%202025-08-21%20072943.png)
+
+InputField Component
+
+### Documentation
+![InputField Docs](./src/assets/Screenshot%202025-08-21%20073005.png)
+
+### Default
+![InputField Default](./src/assets/Screenshot%202025-08-21%20073020.png)
+
+### Error
+![InputField Error](./src/assets/Screenshot%202025-08-21%20073025.png)
+
+### Disabled
+![InputField Disabled](./src/assets/Screenshot%202025-08-21%20073029.png)
+
+### Password
+![InputField Password](./src/assets/Screenshot%202025-08-21%20073034.png)
+
+### Clearable
+![InputField Clearable](./src/assets/Screenshot%202025-08-21%20073038.png)
